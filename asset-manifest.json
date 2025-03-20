@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/projectoIntroduccion/static/css/main.8ce1cd69.css",
-    "main.js": "/projectoIntroduccion/static/js/main.1187f9ce.js",
+    "main.js": "/projectoIntroduccion/static/js/main.2f031f81.js",
     "static/js/453.05462466.chunk.js": "/projectoIntroduccion/static/js/453.05462466.chunk.js",
     "static/media/WorkoutIcon.png": "/projectoIntroduccion/static/media/WorkoutIcon.c175557d1dd37a1545a3.png",
     "static/media/NutritionIcon.png": "/projectoIntroduccion/static/media/NutritionIcon.527fa7085ebc09d69f1c.png",
     "static/media/TrophyIcon.png": "/projectoIntroduccion/static/media/TrophyIcon.56c35acd6feb4c152ec1.png",
     "index.html": "/projectoIntroduccion/index.html",
     "main.8ce1cd69.css.map": "/projectoIntroduccion/static/css/main.8ce1cd69.css.map",
-    "main.1187f9ce.js.map": "/projectoIntroduccion/static/js/main.1187f9ce.js.map",
+    "main.2f031f81.js.map": "/projectoIntroduccion/static/js/main.2f031f81.js.map",
     "453.05462466.chunk.js.map": "/projectoIntroduccion/static/js/453.05462466.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8ce1cd69.css",
-    "static/js/main.1187f9ce.js"
+    "static/js/main.2f031f81.js"
   ]
 }
