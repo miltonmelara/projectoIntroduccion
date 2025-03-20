@@ -12,11 +12,11 @@ const App = () => {
     <Router>
       <NavBar />
       <Routes>
-        <Route path="/projectoIntroduccion/" element={<DashboardPage />} />
-        <Route path="/projectoIntroduccion/workout" element={<WorkoutPlanPage />} />
-        <Route path="/projectoIntroduccion/nutrition" element={<NutritionPlanPage />} />
-        <Route path="/projectoIntroduccion/leaderboard" element={<LeaderboardPage />} />
-        <Route path="/projectoIntroduccion/chat" element={<ChatAssistantPage />} />
+        <Route path="/" element={<DashboardPage />} />
+        <Route path="/workout" element={<WorkoutPlanPage />} />
+        <Route path="/nutrition" element={<NutritionPlanPage />} />
+        <Route path="/leaderboard" element={<LeaderboardPage />} />
+        <Route path="/chat" element={<ChatAssistantPage />} />
         <Route
           path="/"
           element={
