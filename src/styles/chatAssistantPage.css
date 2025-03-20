@@ -1,0 +1,102 @@
+/* src/pages/ChatAssistantPage.css */
+
+/* Full-page container with a black background */
+.chat-assistant-page {
+    background-color: #000000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 1rem;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Centered chat container with dark accent background */
+  .chat-container {
+    background-color: #1A1A1A;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Hide overflow if content grows */
+  }
+  
+  /* Scrollable messages area set as a flex column container */
+  .chat-messages {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+  
+  /* Individual message styling */
+  .chat-message {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    padding: 0.75rem;
+    border-radius: 6px;
+    max-width: 80%;
+    word-wrap: break-word;
+    font-size: 0.95rem;
+  }
+  
+  /* Assistant messages: light bubble with dark text, aligned left */
+  .chat-message.assistant {
+    background-color: #F5F5F5;
+    color: #1A1A1A;
+    align-self: flex-start;
+    text-align: left;
+  }
+  
+  /* User messages: brighter bubble with text aligned right; the bubble itself is pushed right */
+  .chat-message.user {
+    background-color: #FF6B00;
+    color: #FFFFFF;
+    align-self: flex-end;
+    text-align: right;
+  }
+  
+  /* Input bar at the bottom */
+  .chat-input-bar {
+    display: flex;
+    padding: 1rem;
+    background-color: #000000;
+    border-top: 1px solid #CC4400;
+  }
+  
+  /* Input field styling */
+  .chat-input-bar input {
+    flex: 1;
+    padding: 0.75rem;
+    margin-right: 1rem;
+    border: 1px solid #CC4400;
+    border-radius: 6px;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .chat-input-bar input::placeholder {
+    color: #F5F5F5;
+  }
+  
+  /* Send button styling */
+  .chat-input-bar button {
+    background-color: #CC4400;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .chat-input-bar button:hover {
+    background-color: #FF6B00;
+    color: #000000;
+  }
+  

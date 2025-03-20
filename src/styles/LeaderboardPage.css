@@ -1,0 +1,99 @@
+/* LeaderboardPage.css */
+
+/* Page container */
+.leaderboard-page {
+    background-color: #000000; /* Background Color */
+    color: #FFFFFF;            /* Main Text Color */
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Page header */
+  .leaderboard-page h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #FF6B00; /* Primary Color */
+  }
+  
+  /* Card container: centered, 80% width */
+  .leaderboard-card {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #F5F5F5; /* Subtle Contrast for card background */
+    color: #1A1A1A;            /* Dark Accent for card text */
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Leaderboard header inside card */
+  .leaderboard-header {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    color: #FF6B00; /* Primary Color */
+    border-bottom: 2px solid #FF6B00;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Three columns in header: rank (no title), user, and points */
+  .leaderboard-header .leaderboard-rank-header {
+    flex: 0.5;
+    text-align: center;
+  }
+  
+  .leaderboard-header .leaderboard-title {
+    flex: 2;
+    text-align: center;
+  }
+  
+  .leaderboard-header .leaderboard-title:last-child {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Leaderboard body: list of rows */
+  .leaderboard-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Each row: three columns */
+  .leaderboard-row {
+    display: flex;
+    padding: 0.75rem;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Column for ranking number */
+  .leaderboard-row .leaderboard-rank {
+    flex: 0.5;
+    text-align: center;
+  }
+  
+  /* Column for user name */
+  .leaderboard-row .leaderboard-name {
+    flex: 2;
+    text-align: center;
+  }
+  
+  /* Column for points */
+  .leaderboard-row .leaderboard-points {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Alternating row colors with subtle contrast */
+  .leaderboard-body .leaderboard-row:nth-child(odd) {
+    background-color: #F5F5F5; /* Subtle Contrast */
+    color: #1A1A1A;
+  }
+  
+  .leaderboard-body .leaderboard-row:nth-child(even) {
+    background-color: rgba(204, 68, 0, 0.1); /* Very subtle tint of Alternative Accent */
+    color: #1A1A1A;
+  }
+  

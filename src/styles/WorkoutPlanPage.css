@@ -1,0 +1,57 @@
+/* Container for the entire page */
+.workout-plan-page {
+    background-color: #000000; /* Background Color */
+    color: #FFFFFF;            /* Main Text Color */
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Page header */
+  .workout-plan-page h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #FF6B00; /* Primary Color */
+  }
+  
+  /* Container for all routine cards: single column, 80% width, centered */
+  .routine-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* Each routine card styled similar to dashboard cards */
+  .routine-card {
+    background-color: #F5F5F5; /* Subtle Contrast */
+    color: #1A1A1A;            /* Dark Accent */
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .routine-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+  }
+  
+  /* Routine header styling */
+  .routine-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #FF6B00; /* Primary Color */
+    margin-bottom: 1rem;
+  }
+  
+  /* Routine body styling */
+  .routine-body ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  
+  .routine-body li {
+    margin-bottom: 0.5rem;
+  }
+  

@@ -1,0 +1,16 @@
+.dashboard-page {
+    background-color: #000000; /* Page background */
+    min-height: 100vh;
+    padding: 2rem;
+    color: #FFFFFF; /* Main text color */
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .dashboard-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #FF6B00; /* Primary color for the title */
+  }
+  

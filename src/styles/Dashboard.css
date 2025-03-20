@@ -1,0 +1,136 @@
+/* src/components/Dashboard/Dashboard.css */
+
+/* Dashboard container */
+.dashboard {
+  min-height: 100vh;
+  background-color: #000000; /* Background Color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  color: #FFFFFF; /* Main Text Color */
+}
+
+/* Grid container for two columns and two rows:
+   - First column: two rows (Workout top, Leaderboard bottom)
+   - Second column: single card (Nutrition) spanning both rows */
+.dashboard-grid {
+  width: 80vw;            /* Occupy 80% of the viewport width */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-template-rows: 1fr 1fr;    /* Two equal rows */
+  gap: 20px;                      /* 20px gap between rows and columns */
+  justify-items: stretch;         /* Stretch each card horizontally */
+  align-items: stretch;           /* Stretch each card vertically */
+}
+
+/* Card styling using new palette */
+.card {
+  width: 100%;               /* Force the card to occupy full grid cell width */
+  background-color: #F5F5F5; /* Subtle Contrast */
+  color: #1A1A1A;            /* Dark Accent */
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* Hide any nested heading inside the card content to avoid duplicate titles */
+.card-content h1,
+.card-content h2,
+.card-content h3,
+.card-content h4,
+.card-content h5,
+.card-content h6 {
+  display: none;
+}
+
+/* Header for Workout & Dashboard Leaderboard Cards */
+.card-header.split {
+  display: flex;
+  align-items: center;
+  height: 100px; /* Header height */
+  width: 100%;
+}
+
+.card-header.split .card-title {
+  width: 50%;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #FF6B00; /* Primary Color */
+  display: flex;
+  align-items: center;
+}
+
+.card-header.split .card-icon {
+  width: 50%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+}
+
+.card-header.split .card-icon img {
+  height: 80%;       /* Icon occupies 80% of header height (~80px) */
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Header for Nutrition Card */
+.card-header.nutrition {
+  display: flex;
+  align-items: center;
+  height: 100px; /* Same increased header height */
+  width: 100%;
+}
+
+.card-header.nutrition .card-title {
+  width: 50%;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #FF6B00; /* Primary Color */
+  display: flex;
+  align-items: center;
+}
+
+.card-header.nutrition .card-icon {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end; /* Align icon to the right */
+  align-items: center;       /* Center vertically */
+}
+
+.card-header.nutrition .card-icon img {
+  height: 80%;      /* Icon occupies 80% of header height (~80px) */
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Grid placement:
+   .workout-card: top-left cell (row 1, col 1)
+   .dashboard-leaderboard-card: bottom-left cell (row 2, col 1)
+   .nutrition-card: spans top-right & bottom-right (row 1 to 3, col 2)
+*/
+.workout-card {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.dashboard-leaderboard-card {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.nutrition-card {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3; /* Spans both rows in the second column */
+}

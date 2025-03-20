@@ -1,0 +1,20 @@
+.navbar {
+    background-color: #000000; /* Black background */
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .nav-link {
+    color: #FFFFFF;          /* White text */
+    text-decoration: none;   /* Remove underline */
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #FF6B00; /* Primary color on hover */
+  }
+  
